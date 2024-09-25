@@ -77,10 +77,10 @@
           </ul>
 
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-icon">
-              <li class="nav-item">
+              <li class="nav-item" id="search">
                 <a class="nav-link" aria-current="page" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item" id="account">
                 <a class="nav-link" aria-current="page" href="#"><i class="fa-regular fa-user"></i></a>
               </li>
               <li class="nav-item">
@@ -97,13 +97,7 @@
         </div>
       </div>
      
-    </nav>
-
-
-
-
-    
-
+    </nav> 
    <!-- offcanvas start -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
       <div class="offcanvas-header">
@@ -193,20 +187,43 @@
 
  
       <!-- searchInput start -->
-       <div class="search-body d-flex justify-content-center align-items-center">
+       <div class="search-body d-flex justify-content-center align-items-center" id="search-body">
         <form action="">
         <div class="content">
           
            <span><i class="fa-solid fa-magnifying-glass"></i></span>
             <input type="text" placeholder="search here">
             <span class="ass" style="font-size: small;">power by Aytor</span>
-            <span><i class="fa-regular fa-heart"></i></span>
+            <span id="cross_searchInput"><i class="fa-solid fa-x"></i></span>
         </div>
         </form>
            
        </div>
       <!-- searchInput end -->
-
+ 
+     <div class="login" id="login">
+      <form class="">
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-warning">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">                
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        </div>
+        <div class="form-check mt-3">
+          <input type="checkbox" class="form-check-input " id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary my-4">Submit</button>
+      </form> 
+         <div class="logincross">
+          <span>
+            <i class="fa-solid fa-x"></i>
+          </span>
+         </div>
+     </div> 
        
     <!-- jquery js -->
       <script src="./asset/js/jquery-3.7.1.min.js"></script>
