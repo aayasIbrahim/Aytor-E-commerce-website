@@ -41,6 +41,15 @@ nav ul li a:hover{
     color: var(--hover-color) !important;
 
 }
+nav .navbar-toggler span{
+    border: none;
+    display: inline-block;
+    font-size: 30px;
+}
+nav .navbar-togglers span:active{
+    /* border:1px solid var(--hover-color); */
+    border: none;
+}
 nav .nav-icon li a{
     padding: 0 10px !important;
     color: var(--text-color);
@@ -108,4 +117,64 @@ nav .nav-icon li:nth-of-type(4) a span{
     position: absolute;
     right: -60%;
     font-size: 14px;
+}
+.search-body{
+    background-image: url(./background/Mask\ Here.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 100vh;
+    background-color: #FF6F61;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.search-body form{
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    padding:20px 20px ;
+}
+.search-body .content{
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: wheat; */
+    border-radius: 30px;
+    padding: 10px;
+    background-color: rgba(28, 41, 63, 1);
+    color:rgba(255, 255, 255, 1);
+    
+
+}
+.search-body .content:hover{
+    outline: 4px solid #dcdde1;
+
+}
+              
+.search-body .content span{
+    display: inline-block;
+    /* width: 10%; */
+    font-size: 25px;
+    margin-right: 5px;
+    text-align: center;
+    line-height: 10px;
+    cursor: pointer;
+}
+.search-body .content input{
+    display: inline-block;
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline-style: none;
+    padding-right: 15px;
+    /* border-radius: 0px 30px 30px 0px; */
+    background-color: rgba(28, 41, 63, 1);
+    color:rgba(255, 255, 255, 1);
+}
+input::placeholder{
+    color: rgba(130, 130, 130, 1);
+
 }
