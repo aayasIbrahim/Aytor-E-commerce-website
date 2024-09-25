@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --text-color:#11161E;
+    --hover-color:#FF6F61;
+}
+body{
+    font-family: "Josefin Sans", sans-serif;
+    color: var(--text-color);
+
+}
+
+
+/* Nav start */
+nav{
+    background-color: #fff !important;
+}
+nav ul li a{
+    display: inline-block;
+    padding: 0 21px !important;
+    color: var(--text-color) !important;
+    font-size: 16px !important;
+   font-weight: 400 !important;
+   line-height: 26px !important;
+
+}
+nav ul li a:hover{
+    color: var(--hover-color) !important;
+
+}
+nav .nav-icon li a{
+    padding: 0 10px !important;
+    color: var(--text-color);
+    position: relative;
+}
+
+nav .nav-icon li:nth-of-type(4) a span{
+    display: inline-block;
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    background-color: var(--hover-color);
+    text-align: center;
+    line-height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+}
+.offcanvas-body ul li{
+ border-radius: 20px;
+
+}
+.offcanvas-body ul li:hover{
+    background-color: var(--hover-color);
+    /* border-radius: 20px; */
+    /* width: 100%; */
+}
+.offcanvas-body {
+    position: relative;
+}
+.offcanvas-body .icons{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.offcanvas-body .icons ul{
+    display: flex;
+    /* background-color: red; */
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 26px !important;
+    color: var(--text-color);
+    
+}
+.offcanvas-body .icons ul:hover{
+   background-color: var(--hover-color);
+}
+.offcanvas-body .icons ul li {
+   position: relative;
+}
+.offcanvas-body .icons ul li:nth-of-type(4) a span{
+    display: inline-block;
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    background-color: var(--hover-color);
+    text-align: center;
+    line-height: 17px;
+    border-radius: 50%;
+    position: absolute;
+    right: -60%;
+    font-size: 14px;
+}
