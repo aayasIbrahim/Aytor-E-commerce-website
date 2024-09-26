@@ -1,15 +1,31 @@
 let searchIcon=document.querySelector("#search");
 let cross_searchInput=document.querySelector("#cross_searchInput");
 let search_body=document.querySelector("#search-body");
+let content=document.querySelector(".content");
+let footerSsearch=document.querySelector("#footer-search");
 
 
 searchIcon.addEventListener("click",function(){
+  if(!search_body.classList.contains('active')){
     search_body.classList.add("active")
+    content.classList.add("active")
+  }
+
  
 });
 cross_searchInput.addEventListener("click",function(){
-  
- search_body.classList.remove("active")
+    if(search_body.classList.contains('active')){
+        search_body.classList.remove("active")
+        content.classList.remove("active")
+        
+    }
+ 
+})
+footerSsearch.addEventListener("click",function(){
+    if(!search_body.classList.contains("active")){
+        search_body.classList.add("active")
+        content.classList.add("active")
+    }
 })
 // search felid
 
@@ -30,3 +46,8 @@ login.addEventListener("click",function(e){
  }
 })
 // log in end
+
+let footerSearch=document.querySelector('#footer-search');
+footerSearch.addEventListener("click",function(){
+  search_body.classList.add("active")
+})
