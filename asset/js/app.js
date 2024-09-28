@@ -1,9 +1,9 @@
+// search fied start
 let searchIcon=document.querySelector("#search");
 let cross_searchInput=document.querySelector("#cross_searchInput");
 let search_body=document.querySelector("#search-body");
 let content=document.querySelector(".content");
 let footerSsearch=document.querySelector("#footer-search");
-
 
 searchIcon.addEventListener("click",function(){
   if(!search_body.classList.contains('active')){
@@ -27,9 +27,12 @@ footerSsearch.addEventListener("click",function(){
         content.classList.add("active")
     }
 })
-// search felid
+// search field end
 
-// log in stare
+
+
+
+// log in start
 let login=document.querySelector("#login");
 let logincross=document.querySelector(".logincross");
 let account=document.querySelector("#account");
@@ -47,7 +50,26 @@ login.addEventListener("click",function(e){
 })
 // log in end
 
+
+
+
+// nav footer mobile for desing start 
 let footerSearch=document.querySelector('#footer-search');
 footerSearch.addEventListener("click",function(){
   search_body.classList.add("active")
 })
+// nav footer mobile for desing start 
+
+
+
+// jQuery slick slider for bannar start
+$(function(){
+  
+$('.parent').slick({
+  dots:true,
+  arrows:false,
+  dotsClass:"container btnactive"
+
+});
+})
+// jQuery slick slider  for bannar end
