@@ -461,3 +461,23 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
 #beauty .row .image:hover .contains{
     transform: scale(1);
 }
+@media (max-width: 767.98px) { 
+    #bannar h5{
+        padding:100px 0px 14px 0px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    }
+    #bannar h2{
+   
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 74px;
+    }
+    #beauty .row .image{
+        position: relative;
+        display: inline-block;
+        max-width: 100%;
+    
+    }
+}
