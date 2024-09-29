@@ -16,6 +16,16 @@ h1,h2,h3,h4,h5,h6{
 :root{
     --text-color:#11161E;
     --hover-color:#FF6F61;
+     --3d-primary-color: #151a32;
+        --comon-colot: #fff;
+      
+        --paragraph-color: #444;
+        --2nd-primary-color: #ff5645;
+        --background-color: #f1f1f1;
+        --bg: #f1f3f4;
+        --black: #000;
+        --a6aab7: #a6aab7;
+
 }
 body{
     font-family: "Josefin Sans", sans-serif;
@@ -391,6 +401,63 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
 #bannar .btnactive button{
     /* display: flex; */
     color: transparent;
+    margin: 0 2.5px;
+    border-radius: 5px;
+    width: 10px;
+    height: 6px;
+    border: none;
+    background-color:white;
+}
+#bannar .slick-active  button{
+    width: 30px;
+    background-color: var(--hover-color);
 }
 /* bannar end */
-/*  
+#beauty .row{
+    margin-top: 100px;
+}
+#beauty .row .image{
+    position: relative;
+    display: inline-block;
+
+}
+#beauty .row .image .contains{
+    position: absolute;
+    /* background-color:rgba(0, 0, 0, 0.888,) 0.5; */
+    background-color:rgba(17, 22, 30, 0.4);
+    transform: scale(0);
+    inset: 39px;
+    transition: 0.5s;
+
+}
+#beauty .row .image .contains h3{
+    color:  rgba(255, 255, 255, 1);
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    text-align: center;
+    color: var(--comon-colot);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+#beauty .row .image .contains p{
+    
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 175%;
+    text-align: center;
+    color: var(--comon-colot);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#beauty .row .image:hover .contains{
+    transform: scale(1);
+}

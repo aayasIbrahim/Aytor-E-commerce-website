@@ -66,8 +66,11 @@ footerSearch.addEventListener("click",function(){
 $(function(){
   
 $('.parent').slick({
-  dots:true,
   arrows:false,
+  dots:true, 
+  autoplay: true,
+  autoplaySpeed: 1600,
+  slidesToScroll: 1,
   dotsClass:"container btnactive"
 
 });
