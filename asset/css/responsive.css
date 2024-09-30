@@ -1,0 +1,32 @@
+
+@media (max-width: 767.98px) { 
+    nav.active{
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    #bannar h5{
+        padding:100px 0px 14px 0px;
+       font-size: 18px;
+       font-weight: 600;
+    line-height: 28px;
+    }
+    #bannar h2{
+   
+        font-size: 54px;
+        font-weight: 700;
+        line-height: 74px;
+    }
+    #beauty .row {
+        margin-top: 50px;
+        
+    }
+    #beauty .row .image .contains h3{
+        color:  rgba(255, 255, 255, 1);
+        font-size: 20px;
+      
+    }
+    #beauty .row img{
+        width: 100%;
+    }
+}

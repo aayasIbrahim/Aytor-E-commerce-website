@@ -34,9 +34,28 @@ body{
 }
 
 
+
 /* Nav start */
 nav{
-    background-color: #fff !important;
+    background-color: #fff !important;    
+}
+nav.active{
+    position: fixed;
+    transform: translateX(100);
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+    /* left: 0; */
+    animation: active 1s ease-in forwards;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+@keyframes active {
+    0%{
+    transform: translateY(-100%);
+    }
+    100%{
+    transform: translateY(0%);
+    }
 }
 nav ul li a{
     display: inline-block;
@@ -460,30 +479,4 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
 
 #beauty .row .image:hover .contains{
     transform: scale(1);
-}
-@media (max-width: 767.98px) { 
-    #bannar h5{
-        padding:100px 0px 14px 0px;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 28px;
-    }
-    #bannar h2{
-   
-        font-size: 54px;
-        font-weight: 700;
-        line-height: 74px;
-    }
-    #beauty .row {
-        margin-top: 50px;
-        
-    }
-    #beauty .row .image .contains h3{
-        color:  rgba(255, 255, 255, 1);
-        font-size: 20px;
-      
-    }
-    #beauty .row img{
-        width: 100%;
-    }
-}
+ } 

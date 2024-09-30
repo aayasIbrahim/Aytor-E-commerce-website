@@ -1,3 +1,23 @@
+// fixed nav bar when you scroll
+
+let menu=document.querySelector("#menu");
+window.addEventListener("scroll",function(){
+  if(window.scrollY>600){
+    menu.classList.add("active")
+  }else{
+    menu.classList.remove("active")
+  }
+})
+
+
+
+
+
+
+
+
+
+
 // search fied start
 let searchIcon=document.querySelector("#search");
 let cross_searchInput=document.querySelector("#cross_searchInput");
