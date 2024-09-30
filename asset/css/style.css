@@ -426,7 +426,7 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
     /* background-color:rgba(0, 0, 0, 0.888,) 0.5; */
     background-color:rgba(17, 22, 30, 0.4);
     transform: scale(0);
-    inset: 39px;
+    inset: 10%;
     transition: 0.5s;
 
 }
@@ -474,10 +474,16 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
         font-weight: 700;
         line-height: 74px;
     }
-    #beauty .row .image{
-        position: relative;
-        display: inline-block;
-        max-width: 100%;
-    
+    #beauty .row {
+        margin-top: 50px;
+        
+    }
+    #beauty .row .image .contains h3{
+        color:  rgba(255, 255, 255, 1);
+        font-size: 20px;
+      
+    }
+    #beauty .row img{
+        width: 100%;
     }
 }
