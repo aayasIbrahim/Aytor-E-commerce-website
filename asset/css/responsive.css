@@ -38,11 +38,8 @@
     text-align: center;
     color: var(--text-color);
     }
-    #product .productSlider{
-        margin-left:  0;
-    }
-    #product .sliderPart{
-        padding-left: 0;
+    #product .productSlider .sliderPart{
+        padding-right: 0px;
     }
 }
 

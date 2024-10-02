@@ -584,7 +584,10 @@ color: var(--text-color);
 }
 
 #product .productSlider{
-    margin-right: 15px;
+
+}
+#product .productSlider .sliderPart{
+    padding-right: 5px;
 }
  #product .productSlider .slick-prev{
     position: absolute;
