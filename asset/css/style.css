@@ -13,6 +13,44 @@ h1,h2,h3,h4,h5,h6{
     margin: 0;
     padding: 0;
 }
+/*  
+1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+  padding: 0;
+
+}
+/*  
+  4. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  5. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  6. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+
+}
+ul,ol{
+    list-style-type: none;
+}
 :root{
     --text-color:#11161E;
     --hover-color:#FF6F61;
@@ -46,7 +84,7 @@ nav.active{
     width: 100%;
     top: 0;
     /* left: 0; */
-    animation: active 1s ease-in forwards;
+    animation: active 0.5s ease-in forwards;
     box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 @keyframes active {
@@ -109,6 +147,7 @@ nav .nav-icon li:nth-of-type(4) a span{
 }
 .offcanvas-body {
     position: relative;
+    z-index: 9999999;
 }
 .offcanvas-body .icons{
     position: absolute;
@@ -260,6 +299,7 @@ input::placeholder{
     opacity: 0;
     visibility: hidden;
     z-index: 10000;
+    transition: 1s;
 }
 
 .login.active{
@@ -480,3 +520,152 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
 #beauty .row .image:hover .contains{
     transform: scale(1);
  } 
+
+
+
+
+
+
+
+
+/* product start */
+#product h2{
+    padding: 125px 0px 24px 0px;
+
+   font-weight: 700;
+   font-size: 36px;
+  line-height: 128%;
+text-align: center;
+color: var(--text-color);
+}
+#product .productSlider{
+    position: relative;
+
+}
+#product .productSlider .slick-prev{
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    z-index: 99999;
+
+}
+#product .productSlider .slick-next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1; 
+
+}
+
+#product .product-Image{
+    overflow: hidden;
+    position: relative;
+   
+}
+#product .product-Image img{
+    width: 100%;
+}
+
+#product .product-Image .sale h3{
+    position: absolute;
+    width: 52px;
+    height: 26px;
+    
+    top: 15px;
+    left: 15px;
+    color: #fff;
+    background-color: #FF6F61;
+    transform: rotate(-90deg);
+    border-radius: 13px 0px 0px 13px;
+    padding: 0px 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+#product .product-Image img:nth-of-type(1){
+    position: absolute;
+    transition: 1s;
+    cursor: pointer;
+}
+#product .product-Image:hover img:nth-of-type(1){
+    transform: scale(1.5);
+    opacity: 0;
+}
+.product-contains{
+    text-align: center
+}
+.product-contains p{
+    
+font-weight: 400;
+font-size: 16px;
+line-height: 162%;
+color: var(--paragraph-color);
+padding-top: 24px;
+}
+.product-contains h5{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 156%;
+    color: var(--text-color);
+    padding: 5px 0px 11px 0px;
+}
+.product-contains span{
+ color:var(--hover-color);
+
+  /* background-color: var(--hover-color);  */
+
+}
+
+#product .sliderPart{
+     /* padding-left: 5px;  */
+}
+#product .arriveIcons {
+  position: absolute;
+  top: 50%;
+  left: 265px;
+  transform: translateY(-82%); 
+  transition: 0.25s ease-in;
+}
+
+.product-Image .arriveIcons li{
+    margin-bottom: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transform: translateX(-200%);
+    transition: 0.1s ease-in-out;
+    transition-delay: calc(0.1s * var(--num));
+   z-index: 99999999999999;
+}
+
+.product-Image .arriveIcons li button{
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    border-radius: 50%;
+    color: #151A32;
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    border: none;
+    transition: 0.25s ease-in;
+  }
+
+  .product-Image .arriveIcons li button:hover{
+    color: #fff;
+    background-color: #FF6F61;
+  }
+
+  .product-Image:hover  .arriveIcons li{
+    transform: translateX(-50%);
+    opacity: 1;
+ } 
+
+
+
+
+
+
+
+
+ 

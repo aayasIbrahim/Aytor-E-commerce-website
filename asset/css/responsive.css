@@ -27,6 +27,19 @@
       
     }
     #beauty .row img{
-        width: 100%;
+        width: 100%; 
     }
 }
+
+
+/* 
+          <!-- when i hover then genarate icon  "add to cart" --> and responsive */
+ @media (max-width: 575px) {
+    #product .arriveIcons {
+      left: 400px;
+    }
+  } 
+  .product-Image:hover  .arriveIcons li{
+    transform: translateX(-60%);
+    opacity: 1;
+ } 

@@ -1,21 +1,16 @@
 // fixed nav bar when you scroll
 
-let menu=document.querySelector("#menu");
-window.addEventListener("scroll",function(){
-  if(window.scrollY>600){
-    menu.classList.add("active")
-  }else{
-    menu.classList.remove("active")
+const menu = document.querySelector('#menu');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY>700) {
+    menu.classList.add('active');
+  } else {
+    menu.classList.remove('active');
   }
-})
+});
 
-
-
-
-
-
-
-
+// nav bar end
 
 
 // search fied start
@@ -95,4 +90,50 @@ $('.parent').slick({
 
 });
 })
+// tooltip start
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl));
+// tooltip end
+
 // jQuery slick slider  for bannar end
+
+
+
+$(function(){
+  
+  $('.productSlider').slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 3,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          // dots: true
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
+    ]
+
+  });
+})
+	// jQuery slick slider for product start
