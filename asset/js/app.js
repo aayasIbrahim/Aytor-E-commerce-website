@@ -98,7 +98,7 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 // jQuery slick slider  for bannar end
 
 
-
+//jQery slick slider for "product" section
 $(function(){
   
   $('.productSlider').slick({
@@ -106,8 +106,11 @@ $(function(){
     slidesToShow: 4,
     slidesToScroll: 3,
     arrows:true,
-    prevArrow:`<i class="arrowsLeft fa-solid fa-arrow-right"></i>`,
-    nextArrow:`<i class="arrowsRight fa-solid fa-arrow-left"></i>`,
+    prevArrow:`<i class="arrowsLeft fa-solid fa-angle-left"></i>`,
+    nextArrow:`<i class="arrowsRight fa-solid fa-angle-right"></i>`,
+    // here arrows left and  right are class name of the icon..  you can change it as per your need in your css file?
+
+
 
     responsive: [
       {

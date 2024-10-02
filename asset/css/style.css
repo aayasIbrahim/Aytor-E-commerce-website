@@ -486,7 +486,7 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
     /* background-color:rgba(0, 0, 0, 0.888,) 0.5; */
     background-color:rgba(17, 22, 30, 0.4);
     transform: scale(0);
-    inset: 10%;
+    inset: 5%;
     transition: 0.5s;
 
 }
@@ -583,9 +583,7 @@ color: var(--text-color);
   background-color: var(--black);
 }
 
-#product .productSlider{
 
-}
 #product .productSlider .sliderPart{
     padding-right: 5px;
 }
@@ -658,7 +656,7 @@ padding-top: 24px;
     padding: 5px 0px 11px 0px;
 }
 .product-contains span{
- color:var(--hover-color);
+ color:#f1f1f1;
 
   /* background-color: var(--hover-color);  */
 
@@ -681,6 +679,7 @@ padding-top: 24px;
     border-radius: 50% !important;
     text-align: center;
     line-height: 36px;
+    margin-top: 10px;
    
     
 }
