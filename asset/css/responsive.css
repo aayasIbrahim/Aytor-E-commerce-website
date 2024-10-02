@@ -29,6 +29,21 @@
     #beauty .row img{
         width: 100%; 
     }
+    #product h2{
+        padding: 50px 0px 24px 0px;
+    
+       font-weight: 700;
+       font-size: 30px;
+      line-height: 128%;
+    text-align: center;
+    color: var(--text-color);
+    }
+    #product .productSlider{
+        margin-left:  0;
+    }
+    #product .sliderPart{
+        padding-left: 0;
+    }
 }
 
 
