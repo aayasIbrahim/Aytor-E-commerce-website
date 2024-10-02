@@ -32,7 +32,7 @@ h1,h2,h3,h4,h5,h6{
 */
 img, picture, video, canvas, svg {
   display: block;
-  max-width: 100%;
+ width: 100%;
 }
 /*
   5. Remove built-in form typography styles
@@ -68,6 +68,7 @@ ul,ol{
 body{
     font-family: "Josefin Sans", sans-serif;
     color: var(--text-color);
+    /* overflow: hidden; */
 
 }
 
@@ -538,24 +539,67 @@ box-shadow: 3px 3px 30px rgb(166, 24, 24) ;
 text-align: center;
 color: var(--text-color);
 }
-#product .productSlider{
-    position: relative;
+#product .arrowsLeft{
+    color:#ffffff;
+    background-color: rgba(21, 26, 50, 0.5);
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11111;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    cursor: pointer;
 
 }
-#product .productSlider .slick-prev{
+#product .arrowsLeft:hover{
+    color:var(--2nd-primary-color);
+   font-size: 23px;
+   background-color: var(--black);
+
+
+}
+#product .arrowsRight{
+    color:#ffffff;
+    background-color: rgba(21, 26, 50, 0.5);
+    
+    position: absolute;
+    
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 11111;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+#product .arrowsRight:hover{
+    color:var(--2nd-primary-color);
+    font-size: 23px;
+  background-color: var(--black);
+}
+
+#product .productSlider{
+    margin-right: 15px;
+}
+ #product .productSlider .slick-prev{
     position: absolute;
     top: 50%;
     left: 0%;
     z-index: 99999;
 
-}
+} 
 #product .productSlider .slick-next{
     position: absolute;
     right: 0;
     top: 50%;
     z-index: 1; 
 
-}
+} 
 
 #product .product-Image{
     overflow: hidden;
@@ -617,55 +661,41 @@ padding-top: 24px;
 
 }
 
-#product .sliderPart{
-     /* padding-left: 5px;  */
-}
-#product .arriveIcons {
-  position: absolute;
-  top: 50%;
-  left: 265px;
-  transform: translateY(-82%); 
-  transition: 0.25s ease-in;
-}
-
-.product-Image .arriveIcons li{
-    margin-bottom: 10px;
-    cursor: pointer;
+#product .hoverIcons{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transform: translateY(-80%);
     opacity: 0;
-    transform: translateX(-200%);
-    transition: 0.1s ease-in-out;
-    transition-delay: calc(0.1s * var(--num));
-   z-index: 99999999999999;
+    transition: 0.7s;
+ 
+}
+#product .hoverIcons ul li a{
+    width: 36px !important;
+    height: 36px !important;
+    display:block;
+    background-color: #f1f3f4;
+    border-radius: 50% !important;
+    text-align: center;
+    line-height: 36px;
+   
+    
 }
 
-.product-Image .arriveIcons li button{
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 50%;
-    color: #151A32;
-    text-align: center;
-    display: inline-block;
-    background-color: #fff;
-    border: none;
-    transition: 0.25s ease-in;
-  }
 
-  .product-Image .arriveIcons li button:hover{
-    color: #fff;
-    background-color: #FF6F61;
-  }
-
-  .product-Image:hover  .arriveIcons li{
-    transform: translateX(-50%);
-    opacity: 1;
- } 
+#product .hoverIcons li a{
+    color: #000;
+}
+#product .hoverIcons li a:hover{
+    background-color: var(--hover-color);
+    color: #f1f1f1;
+}
 
 
-
-
-
-
+#product .sliderPart:hover .hoverIcons{
+    transform: translateX(0px);
+ opacity: 1;
+}
 
 
  

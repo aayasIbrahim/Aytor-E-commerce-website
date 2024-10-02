@@ -105,6 +105,10 @@ $(function(){
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 3,
+    arrows:true,
+    prevArrow:`<i class="arrowsLeft fa-solid fa-arrow-right"></i>`,
+    nextArrow:`<i class="arrowsRight fa-solid fa-arrow-left"></i>`,
+
     responsive: [
       {
         breakpoint: 1024,
@@ -126,7 +130,8 @@ $(function(){
         breakpoint: 480,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
+          slidesToScroll: 1,
+          arrows:false
         }
       }
       // You can unslick at a given breakpoint now by adding:
