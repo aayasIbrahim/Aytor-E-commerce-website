@@ -73,6 +73,38 @@ body{
 }
 
 
+/* pre load start */
+
+.preload {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.582);
+    z-index: 999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25ms;
+  }
+  .preload .prebox {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border-top: 7px solid blue;
+    border-right: 5px solid transparent;
+    animation: preloader 1s linear infinite forwards;
+  }
+  
+  @keyframes preloader {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+/* pre load end */
+
 
 /* Nav start */
 nav{
@@ -699,5 +731,46 @@ padding-top: 24px;
  opacity: 1;
 }
 
+#cosmaticSpa{
+    margin-top: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-attachment: fixed; */
+    height: 520px;
+    /* width: 1920px; */
+    /* object-fit: cover; */
+}
 
+#cosmaticSpa h2{
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 128%;
+    color: var(--comon-colot);
+    padding: 103px 0 10px 0;
+}
+ 
+#cosmaticSpa p{
+
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: var(--comon-colot);
+    padding-bottom: 30px;
+}
+ 
+#cosmaticSpa a{
+display: inline-block;
+width: 180px;
+height: 56px;
+font-family: var(--font-family);
+font-weight: 600;
+font-size: 18px;
+line-height: 56px;
+text-align: center;
+color: var(--comon-colot);
+border: 1px solid #fff;
+}
  

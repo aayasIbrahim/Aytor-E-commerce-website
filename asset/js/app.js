@@ -1,3 +1,5 @@
+
+
 // fixed nav bar when you scroll
 
 const menu = document.querySelector('#menu');
@@ -108,7 +110,7 @@ $(function(){
     arrows:true,
     prevArrow:`<i class="arrowsLeft fa-solid fa-angle-left"></i>`,
     nextArrow:`<i class="arrowsRight fa-solid fa-angle-right"></i>`,
-    // here arrows left and  right are class name of the icon..  you can change it as per your need in your css file?
+    // here arrows left and  right are class name of the icon..  you can change it as per your need in your css file
 
 
 
@@ -145,3 +147,8 @@ $(function(){
   });
 })
 	// jQuery slick slider for product start
+ // pre loader start
+ $(window).on(`load`, function () {
+  $(`.preload`).fadeOut()
+});
+// pre loader end
