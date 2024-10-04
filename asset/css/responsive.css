@@ -44,6 +44,9 @@
     #cosmaticSpa{
         margin-top: 50px;
     }
+    #cosmaticSpa >*{
+        text-align: center;
+    }
 }
 
 
