@@ -47,6 +47,12 @@
     #cosmaticSpa >*{
         text-align: center;
     }
+    #best-product .row .test{
+        /* width: calc(100%-24px);
+        margin-right: 12px; */
+      
+        margin-bottom: 20px; */
+    }
 }
 
 
