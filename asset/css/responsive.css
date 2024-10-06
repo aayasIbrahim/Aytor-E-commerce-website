@@ -51,7 +51,7 @@
         /* width: calc(100%-24px);
         margin-right: 12px; */
       
-        margin-bottom: 20px; */
+        margin-bottom: 20px; 
     }
 }
 
@@ -60,6 +60,22 @@
       margin: 0px 22px;
     }
   }
+@media (max-width:600px) {
+    #dealDays .dealBox-slick .chlid{
+       text-align: center;
+    }
+    
+  .dealBox-slick .btnactive{
+    position: absolute;
+   left: 89%;
+    top: 82%;
 
+    transform: translateX(-50%);
+    /* background-color: #FF6F61; */
+    /* bottom: 25%; */
+    /* margin-left: 20px; */
+}
+    
+}
 /* 
           <!-- when i hover then genarate icon  "add to cart" --> and responsive */

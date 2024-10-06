@@ -1,4 +1,12 @@
 
+ // pre loader start
+ $(window).on(`load`, function () {
+  $(`.preload`).fadeOut()
+});
+// pre loader end
+
+
+
 
 // fixed nav bar when you scroll
 
@@ -100,7 +108,8 @@ const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstra
 // jQuery slick slider  for bannar end
 
 
-//jQery slick slider for "product" section
+//jQery slick slider for "product" section  start
+
 $(function(){
   
   $('.productSlider').slick({
@@ -146,17 +155,43 @@ $(function(){
 
   });
 })
+//jQery slick slider for "product" section end
 
 
 
-	// jQuery slick slider for product start
- // pre loader start
- $(window).on(`load`, function () {
-  $(`.preload`).fadeOut()
+
+//jQery slick slider for "dealbox" section start
+
+$(function(){
+  
+$('.dealBox-slick').slick({
+  infinite: true,
+  slidesToShow: 2,
+  slidesToScroll: 3,
+  arrows:false,
+  dots:true, 
+  autoplay: true,
+  autoplaySpeed: 2000,
+  slidesToScroll: 2,
+  dotsClass:"container btnactive",
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+
+
 });
-// pre loader end
-
-
+})
+//jQery slick slider for "dealbox" section end
 
 
 $(".timer")
