@@ -55,6 +55,11 @@
     }
 }
 
+@media (min-width: 320px) and (max-width: 410px) {
+    #dealDays .dealBox .timer ul li {
+      margin: 0px 22px;
+    }
+  }
 
 /* 
           <!-- when i hover then genarate icon  "add to cart" --> and responsive */

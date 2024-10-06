@@ -146,9 +146,47 @@ $(function(){
 
   });
 })
+
+
+
 	// jQuery slick slider for product start
  // pre loader start
  $(window).on(`load`, function () {
   $(`.preload`).fadeOut()
 });
 // pre loader end
+
+
+
+
+$(".timer")
+.countdown("2033/07/16", function(event) {
+  $(`.days`).html(event.strftime('%D '));
+  $(`.hour`).html(event.strftime(' %H'));
+  $(`.min`).html(event.strftime('%M'));
+  $(`.sec`).html(event.strftime('%S'));
+});
+// COUNT DOWN END
+
+//  deals slick slider start
+$('#dealSlider').slick({
+arrows:false,
+dots:true, 
+dotsClass: "deal_slider_dot ",
+autoplay: true,
+autoplaySpeed: 1500,
+slidesToScroll: 1,
+responsive: [
+  {
+  breakpoint: 767,
+    settings: {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows:false,
+    mobileFirst:true,
+    }
+  },
+]
+});
+//  deals slick slider end
+// DEALS DAYS END
